@@ -184,16 +184,22 @@ p {
 
 .parent {
     display: flex;
-    flex-direction: column;
-    /* justify-content: space-around; */
-    align-items: center;
+    flex-direction: row;
 }
 
 .content-one {
-    display: flex;
     align-items: center;
     justify-content: space-evenly;
-    flex-direction: row;
+    flex-direction: column;
+    width: 50%;
+    flex-wrap: wrap;
+
+}
+
+.content-two {
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
     width: 50%;
     flex-wrap: wrap;
 }
@@ -214,6 +220,14 @@ hr {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+button {
+    border: 1px solid;
+    border-radius: 12px;
+    padding: 10px 24px;
+    background-color: white;
+    font-size: 1rem;
 }
 
 footer {
