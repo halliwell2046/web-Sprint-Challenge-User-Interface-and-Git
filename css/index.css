@@ -144,6 +144,13 @@ p {
     align-items: center;
     justify-content: center;
     background-color: teal;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+
+.box:hover {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
 }
 
 .middle-content .boxes .box:nth-child(2){
@@ -248,3 +255,42 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+form {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+    1px 1px 0 #000; 
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    background: rgb(187,12,0);
+    background: linear-gradient(0deg, rgba(187,12,0,1) 0%, rgba(10,10,10,1) 100%); 
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    margin-top: 130px;
+    margin-bottom: 130px;
+  }
+  
+  input, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #000;
+  }
+  
+  textarea {
+    vertical-align: top;
+    height: 5em;
+  }
