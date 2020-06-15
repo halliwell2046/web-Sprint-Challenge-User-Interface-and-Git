@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Sprint Challenge - About</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="img/lambda-black.png">
+        </div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#products">Products</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+          </div>
+    </nav>
+
+    <div id="container-fluid form">
+        <form
+          action="https://formspree.io/mknborlk"
+          method="post">CONTACT US TODAY!
+        <p></p>
+        Your First Name<br />
+        <input name="firstname" type="text" pattern=".{3,}" required/><br />
+        Your Last Name<br />
+        <input name="lastname" type="text" pattern=".{3,}" required/><br />
+        Your E-mail<br />
+        <input name="email" type="text" placeholder="name@email.com" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" /><br />
+        Your Phone Number<br />
+        <input name="phone" type="text" placeholder="888 888 8888" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="12" required/><br />
+        Your Message<br />
+        <textarea name="message" minlength="6" required></textarea>
+        
+        <p></p>
+        <button>Send</button>  <button>Clear</button>
+        </form>
+        </div>
+    
+</body>
+</html>
